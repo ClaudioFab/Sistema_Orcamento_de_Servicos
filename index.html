@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix</title>
+    <!-- Conecção com style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <!-- Nome da empresa - Logo - Slogan - informações -->
+    <header>
+        <h1 class="titulo">TechFix Informática</h1>
+        <h2 class="subtitulo">Manutenção e suporte para seu computador.</h2>
+    </header>
+
+    <!-- Conteúdo principal da página-->
+    <main>
+        <!-- Primeira sessão -->
+        <section id="inicio">
+            <h2 class="secao1">Orçamento de serviços</h2>
+            <p class="clienteNome">Nome do cliente:</p>
+
+            <!-- entrada de dados -->
+            <input id="nome" placeholder="Digite seu nome"><br><br>
+
+
+            <p class="servicoNome">Escolha o serviço:</p>
+
+            <input id="servico" type="text" placeholder="Selecione um serviço"><br>
+
+            <!-- input de confirmação -->
+            <button onclick="entradaBotao()" class="botao" href="#servicos">Calcular Orçamento</button><br>
+            <p id="resultado" class="resultados"></p>
+        </section>
+
+    </main>
+    <!-- Nome empresa, direitos autorais, ano, contratos, links, informações institucionais -->
+    <footer>
+        <p>TechFix Informática - 2026</p>
+    </footer>
+
+    <!-- Conexão JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
