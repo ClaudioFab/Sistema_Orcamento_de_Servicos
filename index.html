@@ -9,37 +9,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Body inteiro -->
 <body>
-    <!-- Cabeçalho -->
-    <!-- Nome da empresa - Logo - Slogan - informações -->
+    <!-- Cabeçalho todo -->
     <header>
+        <!-- Header titulo e subtitulo -->
         <h1 class="titulo">TechFix Informática</h1>
         <h2 class="subtitulo">Manutenção e suporte para seu computador.</h2>
     </header>
 
     <!-- Conteúdo principal da página-->
     <main>
+        <!-- Section inteira -->
         <!-- Primeira sessão -->
         <section id="inicio">
             <h2 class="secao1">Orçamento de serviços</h2>
-            <p class="clienteNome">Nome do cliente:</p>
 
-            <!-- entrada de dados -->
-            <input id="nome" placeholder="Digite seu nome"><br><br>
+            <!-- Questão nome -->
+            <label class="clienteNome">Nome do cliente:</label>
 
+            <!-- Entrada de nome -->
+            <input id="nome" placeholder="Digite seu nome"><br><br><br>
 
-            <p class="servicoNome">Escolha o serviço:</p>
+            <!-- Questão serviço -->
+            <label class="servicoNome">Escolha o serviço:</label>
 
-            <input id="servico" type="text" placeholder="Selecione um serviço"><br>
+            <!-- Entrada de Select escolher opções -->
+            <select id="servico">
+                <option value="vazio">Selecione um serviço</option>
+                <option value="formatacao">Formatação de computador</option>
+                <option value="limpeza">Limpeza e manutenção</option>
+                <option value="programas">Instalação de programas</option>
+                <option value="backup">Backup de arquivos</option>
+            </select><br><br>
 
-            <!-- input de confirmação -->
+            <!-- Botão input de confirmação -->
             <button onclick="entradaBotao()" class="botao" href="#servicos">Calcular Orçamento</button><br>
+
+            <!-- Resultado final -->
             <p id="resultado" class="resultados"></p>
         </section>
 
     </main>
     <!-- Nome empresa, direitos autorais, ano, contratos, links, informações institucionais -->
     <footer>
+        <!-- Footer -->
         <p>TechFix Informática - 2026</p>
     </footer>
 

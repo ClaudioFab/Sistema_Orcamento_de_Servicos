@@ -1,79 +1,130 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;/*Remove margem padrão*/
-    background-color: #f4f1f1;/*Cor de fundo*/
-    color: black;/*Cor do texto*/
-}
 
 
+/*Cabeçalho todo*/
 header {
-    text-align: center;/*centraliza horizontalmente*/
+    text-align: center;
+    /*centraliza horizontalmente*/
     background-color: rgb(24, 51, 108);
-    padding: 25px;/*cria espaçamento interno*/
-    
+    padding: 25px;
+    /*cria espaçamento interno*/
+
 }
 
-h1.titulo{
-    color: white;/*cor do texto*/
+/*Header titulo e subtitulo*/
+h1.titulo {
+    color: white;
+    /*cor do texto*/
     font-size: 40px;
 }
 
-h2.subtitulo{
-    color: white;/*cor do texto*/
+/*Header titulo e subtitulo*/
+h2.subtitulo {
+    color: white;
+    /*cor do texto*/
     font-size: 20px;
     font-weight: normal;
 }
 
+/*Body inteiro*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /*Remove margem padrão*/
+    background-color: #f4f1f1;
+    /*Cor de fundo*/
+    color: black;
+    /*Cor do texto*/
+}
+
+/*Conteúdo principal da página*/
 main {
-    width: 80%;/*Largura do conteúdo principal*/
+    width: 80%;
+    /*Largura do conteúdo principal*/
     margin: 30px auto;
 }
 
+/*Section inteira*/
 section {
     background-color: white;
-    color: black;/*Cor do texto*/
-    padding: 25px;/*Espaço interno*/
-    margin-bottom: 20px;/*Espaço abaixo de cada sessão*/
+    color: black;
+    /*Cor do texto*/
+    padding: 25px;
+    /*Espaço interno*/
+    margin-bottom: 20px;
+    /*Espaço abaixo de cada sessão*/
     border: 1px solid rgb(222, 220, 220);
 }
 
-.botao:hover {
-    background: linear-gradient(135deg,#0ea5e9,rgb(65, 107, 199));
-    color: white;
-    border: 1px solid rgb(222, 220, 220);
-}
-
+/*Primeira sessão*/
 h2.secao1 {
     color: rgb(24, 51, 108);
     text-align: center;
     font-size: 30px;
 }
 
-p.clienteNome,
-p.servicoNome{
-    font-size: 25px;
+/*Entrada de nome*/
+#nome{
+    width: 98%;/*largura no limite final*/
     font-weight: normal;
+    padding: 10px 15px;/*10px cima e baixo/ 20px esquerda e direita*/
+    border: 1px solid rgb(222, 220, 220);/*Cor da linha da borda*/
+    font-size: 18px;
+    margin-top: 10px;/*Cria um espaço acima*/
 }
 
+/*Entrada de Select escolher opções*/
+#servico {
+    width: 100%;/*largura no limite final*/
+    font-weight: normal;
+    padding: 10px 15px;/*10px cima e baixo/ 20px esquerda e direita*/
+    border: 1px solid rgb(222, 220, 220);/*Cor da linha da borda*/
+    font-size: 18px;
+    margin-top: 10px;/*Cria um espaço acima*/
+}
 
+/*Questão nome*/
+/*Questão serviço*/
+label.clienteNome,
+label.servicoNome {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 1px;/*Cria um espaço acima do botão*/
+    padding: 1px 1px;/*10px cima e baixo/ 20px esquerda e direita*/
+}
+
+/*Botão input de confirmação*/
 .botao {
     background-color: rgb(24, 51, 108);
     color: white;
-    text-decoration: none;/*Remove o sublinhado do link*/
-    display: inline-block;/*Aceita melhor a propriedade de margem*/
-    margin-top: 10px;/*Cria um espaço acima do botão*/
-    padding: 15px 25px;/*10px cima e baixo/ 20px esquerda e direita*/
+    text-decoration: none;
+    /*Remove o sublinhado do link*/
+    display: inline-block;
+    /*Aceita melhor a propriedade de margem*/
+    margin-top: 10px;
+    /*Cria um espaço acima do botão*/
+    padding: 15px 25px;
+    /*10px cima e baixo/ 20px esquerda e direita*/
     border: 1px solid rgb(222, 220, 220);
     font-size: 18px;
 }
 
-.resultados{
-    background-color: #f4f1f1;/*Cor de fundo*/
+/*Botão input de confirmação*/
+.botao:hover {
+    background: linear-gradient(135deg, #0ea5e9, rgb(65, 107, 199));
+    color: white;
+    border: 1px solid rgb(222, 220, 220);
+}
+
+/*Resultado final*/
+.resultados {
+    background-color: #f4f1f1;
+    /*Cor de fundo*/
     color: black;
     padding: 20px;
 }
 
-footer{
+/*Footer embaixo*/
+footer {
     background-color: rgb(24, 51, 108);
     color: white;
     text-align: center;
