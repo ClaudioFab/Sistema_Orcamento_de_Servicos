@@ -10,6 +10,7 @@
 </head>
 
 <!-- Body inteiro -->
+
 <body>
     <!-- Cabeçalho todo -->
     <header>
@@ -36,15 +37,24 @@
 
             <!-- Entrada de Select escolher opções -->
             <select id="servico">
-                <option value="vazio">Selecione um serviço</option>
+                <!-- disabled selected funciona como um placeholder -->
+                <option value="" disabled selected>Selecione um serviço</option>
+
                 <option value="formatacao">Formatação de computador</option>
                 <option value="limpeza">Limpeza e manutenção</option>
                 <option value="programas">Instalação de programas</option>
                 <option value="backup">Backup de arquivos</option>
             </select><br><br>
 
-            <!-- Botão input de confirmação -->
-            <button onclick="entradaBotao()" class="botao" href="#servicos">Calcular Orçamento</button><br>
+            <!-- div com botões juntos -->
+            <div class="botoes">
+                <!-- Botão input de confirmação -->
+                <button onclick="entradaBotao()" class="botao" href="#servicos">Calcular Orçamento</button>
+
+                <!-- Botão limpar -->
+                <button onclick="limparBotao()" class="botao">Limpar</button><br>
+            </div>
+
 
             <!-- Resultado final -->
             <p id="resultado" class="resultados"></p>

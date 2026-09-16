@@ -1,13 +1,17 @@
-
+/*Todos os elementos da página*/
+* {
+    box-sizing: border-box;
+    /*Faz width e height incluírem o padding e a borda*/
+}
 
 /*Cabeçalho todo*/
 header {
     text-align: center;
     /*centraliza horizontalmente*/
     background-color: rgb(24, 51, 108);
+    /*define a cor de fundo*/
     padding: 25px;
     /*cria espaçamento interno*/
-
 }
 
 /*Header titulo e subtitulo*/
@@ -15,6 +19,7 @@ h1.titulo {
     color: white;
     /*cor do texto*/
     font-size: 40px;
+    /*define o tamanho do texto*/
 }
 
 /*Header titulo e subtitulo*/
@@ -22,12 +27,15 @@ h2.subtitulo {
     color: white;
     /*cor do texto*/
     font-size: 20px;
+    /*define o tamanho do texto*/
     font-weight: normal;
+    /*deixa o texto com espessura normal*/
 }
 
 /*Body inteiro*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
+    /*define a fonte do texto*/
     margin: 0;
     /*Remove margem padrão*/
     background-color: #f4f1f1;
@@ -41,11 +49,13 @@ main {
     width: 80%;
     /*Largura do conteúdo principal*/
     margin: 30px auto;
+    /*cria espaço acima e abaixo e centraliza horizontalmente*/
 }
 
 /*Section inteira*/
 section {
     background-color: white;
+    /*define a cor de fundo*/
     color: black;
     /*Cor do texto*/
     padding: 25px;
@@ -53,66 +63,111 @@ section {
     margin-bottom: 20px;
     /*Espaço abaixo de cada sessão*/
     border: 1px solid rgb(222, 220, 220);
+    /*cria uma borda de 1px ao redor*/
 }
 
 /*Primeira sessão*/
 h2.secao1 {
     color: rgb(24, 51, 108);
+    /*define a cor do texto*/
     text-align: center;
+    /*centraliza horizontalmente*/
     font-size: 30px;
+    /*define o tamanho do texto*/
 }
 
 /*Entrada de nome*/
-#nome{
-    width: 98%;/*largura no limite final*/
+#nome {
+    width: 100%;
+    /*largura no limite final*/
     font-weight: normal;
-    padding: 10px 15px;/*10px cima e baixo/ 20px esquerda e direita*/
-    border: 1px solid rgb(222, 220, 220);/*Cor da linha da borda*/
+    /*deixa o texto com espessura normal*/
+    padding: 10px 15px;
+    /*10px cima e baixo / 15px esquerda e direita*/
+    border: 1px solid rgb(222, 220, 220);
+    /*Cor da linha da borda*/
     font-size: 18px;
-    margin-top: 10px;/*Cria um espaço acima*/
+    /*define o tamanho do texto*/
+    margin-top: 10px;
+    /*Cria um espaço acima*/
 }
 
 /*Entrada de Select escolher opções*/
 #servico {
-    width: 100%;/*largura no limite final*/
+    width: 100%;
+    /*largura no limite final*/
     font-weight: normal;
-    padding: 10px 15px;/*10px cima e baixo/ 20px esquerda e direita*/
-    border: 1px solid rgb(222, 220, 220);/*Cor da linha da borda*/
+    /*deixa o texto com espessura normal*/
+    padding: 10px 15px;
+    /*10px cima e baixo / 15px esquerda e direita*/
+    border: 1px solid rgb(222, 220, 220);
+    /*Cor da linha da borda*/
     font-size: 18px;
-    margin-top: 10px;/*Cria um espaço acima*/
+    /*define o tamanho do texto*/
+    margin-top: 10px;
+    /*Cria um espaço acima*/
 }
 
 /*Questão nome*/
 /*Questão serviço*/
 label.clienteNome,
 label.servicoNome {
+    color: rgb(82, 82, 82);
+    /*define a cor do texto*/
     font-size: 25px;
+    /*define o tamanho do texto*/
     font-weight: normal;
-    margin-top: 1px;/*Cria um espaço acima do botão*/
-    padding: 1px 1px;/*10px cima e baixo/ 20px esquerda e direita*/
+    /*deixa o texto com espessura normal*/
+    margin-top: 1px;
+    /*Cria um espaço acima do botão*/
+    padding: 1px 1px;
+    /*cria pequeno espaçamento interno*/
+}
+
+/*div com botões juntos*/
+.botoes {
+    text-align: left;
+    /*alinha os botões à esquerda*/
+}
+
+/*Primeiro botão dentro da div de botões*/
+.botao:first-child {
+    margin-right: 450px;
+    /*cria espaço entre o primeiro e o segundo botão*/
 }
 
 /*Botão input de confirmação*/
+/*Botão limpar*/
 .botao {
     background-color: rgb(24, 51, 108);
+    /*define a cor de fundo*/
     color: white;
+    /*define a cor do texto*/
     text-decoration: none;
-    /*Remove o sublinhado do link*/
+    /*remove decoração de texto, como sublinhado*/
     display: inline-block;
-    /*Aceita melhor a propriedade de margem*/
+    /*permite controlar melhor tamanho e espaçamento*/
     margin-top: 10px;
-    /*Cria um espaço acima do botão*/
+    /*cria um espaço acima do botão*/
     padding: 15px 25px;
-    /*10px cima e baixo/ 20px esquerda e direita*/
+    /*15px cima e baixo / 25px esquerda e direita*/
     border: 1px solid rgb(222, 220, 220);
+    /*cria uma borda ao redor*/
     font-size: 18px;
+    /*define o tamanho do texto*/
+    min-width: 250px;
+    /*define uma largura mínima para o botão*/
 }
 
 /*Botão input de confirmação*/
+/*Botão limpar*/
 .botao:hover {
     background: linear-gradient(135deg, #0ea5e9, rgb(65, 107, 199));
+    /*muda o fundo quando o mouse passa sobre o botão*/
     color: white;
+    /*mantém a cor do texto*/
     border: 1px solid rgb(222, 220, 220);
+    /*mantém a borda*/
 }
 
 /*Resultado final*/
@@ -120,14 +175,21 @@ label.servicoNome {
     background-color: #f4f1f1;
     /*Cor de fundo*/
     color: black;
+    /*Cor do texto*/
     padding: 20px;
+    /*cria espaçamento interno*/
 }
 
 /*Footer embaixo*/
 footer {
     background-color: rgb(24, 51, 108);
+    /*define a cor de fundo*/
     color: white;
+    /*define a cor do texto*/
     text-align: center;
+    /*centraliza horizontalmente*/
     padding: 15px;
+    /*cria espaçamento interno*/
     font-size: 20px;
+    /*define o tamanho do texto*/
 }
